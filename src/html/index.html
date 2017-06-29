@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <script type="text/x-template" id="grid-template">
         <table>
             <thead>
@@ -33,6 +34,7 @@
 
     <!-- demo root element -->
     <div id="demo">
+        <span>Message: {{ searchQuery }}</span>
         <form id="search">
             Search <input name="query" v-model="searchQuery">
         </form>
@@ -99,7 +101,7 @@
     var demo = new Vue({
         el: '#demo',
         data: {
-            searchQuery: '',
+            searchQuery: 'wangyao',
             gridColumns: ['name', 'power'],
             gridData: [{
                 name: 'Chuck Norris',

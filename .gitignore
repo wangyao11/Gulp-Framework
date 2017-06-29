@@ -4,3 +4,4 @@ my-app.iml
 target/
 dist/
 src/assets/
+npm-debug.log
